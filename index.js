@@ -9,7 +9,7 @@ net.train([
     { input: { red: 1, green: 0, blue: 0 }, output: { color: 0 } },
 ])
 
-color.addEventListener("change", function () {
+color.addEventListener("input", function () {
     site.style.backgroundColor = color.value;
 
     let rgb = color.value.substring(4, color.value.length - 1).split(",");
